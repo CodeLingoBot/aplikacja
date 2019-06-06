@@ -42,6 +42,7 @@ class PhotosOverrideImported implements StrategyInterface
         // Get all parsed downloaded photos.
         $photosArray = (new PhotosData())->getAll();
 
+
         // Insert into DB using eloquent.
         $photos = Photo::insert($photosArray);
 

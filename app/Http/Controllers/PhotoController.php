@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Album;
 use App\Photo;
 use App\User;
 use Illuminate\Http\Request;
@@ -28,9 +29,11 @@ class PhotoController extends Controller
     {
         $photo = Photo::find($id);
         $users = User::all(['id', 'email']);
+        $albums = Album::all();
 
         return view('photo.edit')
             ->withPhoto($photo)
+            ->withAlbums($albums)
             ->withUsers($users);
     }
 

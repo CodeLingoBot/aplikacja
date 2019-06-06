@@ -38,6 +38,20 @@
                                 </select>
                             </div>
 
+                            <div class="form-group">
+                                <label><b>Album</b></label>
+                                <select name="album_id" class="form-control">
+                                    <option value="NULL">{{ __('Brak') }}</option>
+                                    @foreach($albums as $album)
+                                        @if($photo->album_id == $album->id)
+                                            <option value="{{ $album->id }}" selected>{{ $album->title }}</option>
+                                        @else
+                                            <option value="{{ $album->id }}">{{ $album->title }}</option>
+                                        @endif
+                                    @endforeach
+                                </select>
+                            </div>
+
                             <button type="submit" class="btn btn-primary" style="width: 100%">Zapisz</button>
                         </form>
 

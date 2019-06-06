@@ -22,6 +22,6 @@ class Photo extends Model
 
     public function album()
     {
-        return $this->hasOne(Album::class, 'id', 'albumId');
+        return $this->hasOne(Album::class, 'id', 'album_id');
     }
 }

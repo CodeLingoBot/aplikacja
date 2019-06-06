@@ -37,7 +37,7 @@ class PhotosImportNew implements StrategyInterface
             Photo::firstOrCreate(
                 ['id' => $downloaded['id']],
                 ['title' => $downloaded['title']],
-                ['albumId' => $downloaded['albumId']],
+//                ['albumId' => $downloaded['albumId']],
                 ['url' => $downloaded['url']],
                 ['thumbnailUrl' => $downloaded['thumbnailUrl']]
             );

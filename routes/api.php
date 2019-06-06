@@ -17,4 +17,6 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::get('v1/photos', 'API\PhotosController@index')->name('api.photos.index');
+Route::get('v1/ajax/photos', 'API\PhotosAjaxController@index')->name('api.photos.index');
+
+Route::get('v1/photos', 'API\PhotosController@index')->name('photos.index');
