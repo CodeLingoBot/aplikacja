@@ -1,6 +1,5 @@
 
 ## Karol Reinert 
-Rozwiązanie zadania testowego.
 
 
 ## Instalacja 
