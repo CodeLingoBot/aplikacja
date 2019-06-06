@@ -1,0 +1,15 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+#edit-button {
+    background: mediumvioletred;
+    padding: 8px;
+    border-radius: 6px;
+    color: white;
+}
